@@ -1,0 +1,20 @@
+connait_logic(X):-bon_etudiant(X),enseignant(Y,X),logiciel(Y).
+
+bon_etudiant(cerile).
+bon_etudiant(david).
+logiciel(michel).
+enseignant(michel,david).
+
+?- enseignant(X,david).
+
+?- logiciel(X).
+
+?- connait_logic(X).
+
+?-trace.
+
+?-consult().
+
+?-listing.
+
+?-halt.
